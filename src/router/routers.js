@@ -191,6 +191,7 @@ export default [
   },
 
   // 商品管理
+  // 注意这里的路径
   {
     path: '/item',
     name: 'item',
@@ -220,6 +221,7 @@ export default [
         component: () => import('@/view/item/category/edit')
       },
       {
+        //这里路径外部是item
         path: 'brand',
         name: 'list_item_brand',
         meta: {

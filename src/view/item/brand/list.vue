@@ -37,7 +37,7 @@
 import {baseList} from '@/libs/crud/base-list'
 
 export default {
-  // 混入，相当于继承，效果等于拷贝base-list代码到这里来
+  //  混入，相当于继承，效果等于拷贝base-list代码到这里来
   mixins: [baseList],
   data () {
     return {

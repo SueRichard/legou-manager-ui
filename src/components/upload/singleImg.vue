@@ -7,7 +7,7 @@
                 <Icon type="ios-trash-outline" @click.native="handleRemove()"></Icon>
             </div>
         </div>
-<!--      on-success上传成功回调 on-exceeded-size超过max-size指定大小回调-->
+       <!--on-success上传成功回调 on-exceeded-size超过max-size指定大小回调-->
         <Upload
                 :action="actionUrl"
                 :format="['jpg','jpeg','png']"
@@ -30,9 +30,9 @@
     export default {
         name: 'singleImg',
         props: {
-          // 模板里面的下划线，到这里换成驼峰
+          //  模板里面的下划线，到这里换成驼峰
             pimageUrl: {
-              // 类型为string
+              //  类型为string
                 type: String
             }
         },

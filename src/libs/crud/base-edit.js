@@ -4,9 +4,10 @@ import Qs from 'qs'
 export const baseEdit = {
     data() {
         return {
-            // 当前路由的子目录/security/post/1 -> security
+          //约定大于配置，通过这两个参数识别不同的调用，以作为基类的基础
+            // 当前路由的子目录/security/post/1 -> security 一级目录
             namespace: '',
-            // 当前路由的最后访问路径/security/post/1-> post
+            // 当前路由的最后访问路径/security/post/1-> post 二级目录
             entityName: ''
         }
     },

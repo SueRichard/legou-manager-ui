@@ -26,15 +26,15 @@
 </template>
 
 <script>
-   // 导入文件
+   //  导入文件
     import {baseEdit} from '@/libs/crud/base-edit'
-    // vue.config.js文件中的config.set, 指定文件路径
+    //  vue.config.js文件中的config.set, 指定文件路径
     import selectCategorys from '_c/select/selectCategorys.vue'
     import singleImg from '_c/upload/singleImg.vue'
 
 
     export default {
-      //使用自定义组件前声明
+      // 使用自定义组件前声明
         components: {selectCategorys, singleImg},
         mixins: [baseEdit],
         data() {
