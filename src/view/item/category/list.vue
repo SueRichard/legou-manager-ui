@@ -10,6 +10,7 @@
                     </Col>
                     <Col span="8">
                         <Divider type="vertical" />
+<!--                      根节点添加不需要父节点id-->
                         <Button type="primary" @click="addRoot">添加</Button>
                         <Button type="primary" @click="query" style="margin-left: 8px">查询</Button>
                     </Col>
@@ -17,6 +18,7 @@
             </Form>
         </div>
         <div>
+          <!--          渲染函数，在父类-->
             <Tree :data="rows" :render="renderContent"></Tree>
         </div>
     </div>

@@ -52,6 +52,7 @@ export const baseTree = {
               marginRight: '8px'
             },
             on: {
+              //添加子节点，传当前节点id
               click: () => { this.addChild(data.id) }
             }
           }),
@@ -85,12 +86,13 @@ export const baseTree = {
         console.log(error)
       })
     },
+    // 添加根不需要父节点id
     addRoot () {
       this.$router.push({
         name: `edit_${this.namespace}_${this.entityName}`
       })
     },
-    // 添加
+    // 添加子节点需要父节点id
     addChild (id) {
       this.$router.push({
         name: `edit_${this.namespace}_${this.entityName}`,
