@@ -4,9 +4,9 @@ import { Message } from 'iview';
 const instance = axios.create({
   // baseURL: '/api',
   //网关
-  // baseURL: 'http://localhost:8062/api',
-  //指定7路径
-  baseURL: 'http://localhost:9005',
+  baseURL: 'http://localhost:8062/api',
+  //指定路径
+  // baseURL: 'http://localhost:9005',
   timeout: 1000000
 })
 
