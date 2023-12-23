@@ -23,7 +23,6 @@ router.beforeEach((to, from, next) => {
   iView.LoadingBar.start()
   const token = getToken()
   // 注意这里的路由导航
-  /*
   if (!token && to.name !== LOGIN_PAGE_NAME) {
     // 未登录且要跳转的页面不是登录页
     next({
@@ -40,9 +39,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next()
   }
-  */
-  //跳过验证
-  next()
 })
 
 router.afterEach(to => {
